@@ -1,0 +1,217 @@
+// Week 2 - Loops
+
+// In the following exercises, you will need to place your code or answer underneath each
+// exercise prompt.
+
+// First try answering these without using references or looking up any information.
+// Then, check your answer by using references and/or running your code. 
+// You can run your JS code using the Chrome or Firefox Developer tools, or by using Node.js.
+// Feel free to update your answers if you got them wrong at first -- this exercise is for your own learning.
+// But make sure you understand why the correct answer is right.
+
+// Exercise 1. Write a 'while' loop that prints the integers (whole numbers)
+// between 1 and 5 (inclusive).
+let x=0;
+  let wholeNum=" ";
+  while(x<6){
+    wholeNum+= x+ ",";
+      x+=1;
+    
+  }
+
+console.log(wholeNum)
+// Exercise 2. Write a 'do while' loop that prints the integers (whole numbers)
+// between 1 and 5 (inclusive).
+
+let wholeNum1=" ";
+  let i = 0;
+  do {
+    wholeNum1+=i+ ",";
+    i+=1;
+  }
+  while (i < 6);
+console.log(wholeNum1);
+// Exercise 3. Write a 'for' loop that prints the integers (whole numbers)
+// between 1 and 5 (inclusive).
+let wholeNum3=" ";
+for(let i=0; i<6; i+=1){
+    wholeNum3+=i+",";
+   
+}
+console.log(wholeNum3);
+
+// Exercise 4. Now we want a loop that prints the integers 
+// counting DOWN from 10 to 1 (inclusive). Write three loops that do this, to practice
+// writing loops in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+let a =10;
+let num1=" ";
+while(a>0){
+   
+    num1+=a+ ",";
+    a-=1;
+};
+console.log(num1)
+
+// do while loop
+let num2=" ";
+let k=10;
+do{
+    num2+=k +","
+    k-=1;
+}while(k>0);
+
+console.log(num2)
+
+//for loop
+let num3=" ";
+for(a=10;a>0; a-=1){
+    num3+=a+ ",";
+}
+console.log(num3);
+// Exercise 5. Write a loop that prints the integers from 7 to 27. Write this 
+// loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+
+let b=7;
+let number1=" ";
+while(b<=27){
+    number1+=b+ ",";
+    b+=1;
+}; 
+console.log(number1);
+
+// Do While Loop
+  let d = 7;
+ let number2=" ";
+  do{
+    number2+=d+",";
+    d+=1;
+}while(d<=27);
+console.log(number2);
+
+// For Loop 
+let number3=" ";
+for (let c=7; c<=27; c+=1){
+    number3+=c +" ,"
+}
+console.log(number3)
+// Exercise 6. Write a loop that prints numbers between 0 and 100, counting by tens.
+// I.e. it will print 10, then 20, then 30, etc. 
+// Write this loop in all 3 ways -- as a 'while', 'do while', and 'for' loop.
+
+// while loop
+let f=0;
+let n=" ";
+while(f<101){
+    n+=f + " ,";
+    f+=10;
+}
+console.log(n);
+
+// do while loop
+let e=0;
+let n1=" ";
+do {
+    n1+=e+ ",";
+    e+=10;
+}while(e<101);
+console.log(n1);
+// for loop
+
+let n2=" ";
+for(let i=0; i<101;i+=10){
+    n2+=i +" ," ;
+}
+console.log(n2);
+// Exercise 7. Add a comment as to why the following loop is an infinite loop (will 
+// run without ever stopping). Then fix the loop so that it stops when
+// counterFour is equal to -100.
+
+//The loop is infinite because there have infinite negative numbers that is less than 2. 
+let counterFour = 1;
+let result1=" ";
+while (counterFour < 2) {
+    result1+=console.log("Help Me!"+ " ");
+    counterFour--;
+    if (counterFour ===-101){
+        break;
+    }
+}
+console.log(result1);
+
+
+// Exercise 8. Make a variable that contains your favorite integer. Write a loop 
+// (your choice which type) that prints the integers from 0 to that number.
+let print="";
+for(let h=0; h<=39; h+=3){
+   print+=h + " , ";
+};
+console.log(print);
+
+// Exercise 9. Make a variable that contains your favorite integer (this time make sure it's 
+// less than 100). Write a loop (your choice which type) that prints the integers from 0 to 100.
+// Next to each number it should print "not my favorite number". But next to your favorite
+// number it should print "my favorite number!". Example output (if your favorite number was 2):
+// 0 not my favorite number
+// 1 not my favorite number
+// 2 my favorite number!
+// 3 not my favorite number
+// ...
+// (Hint - use an if statement in your loop)
+let result=" ";
+for (let j=0; j<=100; j++){
+   
+    if ((j<=100) && (j!=39)){
+        result+=j + " ,not my favorite number!<br>"
+    }else if(j=39){
+     result+=j + " , my favorite number!<br> " ;
+     }
+}
+console.log(result);
+// Exercise 10. In some of the exercises above, we had you write all 3 types of loops, for practice.
+// But in real life, how would you decide which type of loop to use? You might not have an
+// exact answer, but spend a few minutes thinking about the different types of loops and/or 
+// doing some research and write down your thoughts in a comment below:
+//
+
+
+// Exercise 11. Now we'll practice using nested loops (a loop inside another loop)!
+// Update the nested loops below to so that for each value of outsideCounter,
+// the inside loop will show a countdown
+
+/*
+counting down from 0
+*********************************** 
+counting down from 1
+inside 1
+*********************************** 
+counting down from 2
+inside 2
+inside 1
+*********************************** 
+counting down from 3
+inside 3
+inside 2
+inside 1
+*********************************** 
+*/
+
+ 
+
+for (let outsideCounter = 0; outsideCounter <= 3; outsideCounter+=1) {
+  console.log("counting down from", outsideCounter);
+  for (let insideCounter = outsideCounter; insideCounter <=3; insideCounter-=1) {
+      console.log("inside", insideCounter);
+      if(insideCounter == 0){
+          break;
+      }
+  }
+  console.log("***********************************")
+}
+
+
+// Congrats, you made it to the end!
+// Did you find this easy or hard? If you used references, which ones helped you? 
+// Please answer in a comment below.
+// It is not to hard. Some questions I used W3School as a reference to help me solve the qustions.
+
+// Email your file to us or commit your file to GitHub and email us a link.
