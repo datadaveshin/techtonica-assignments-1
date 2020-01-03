@@ -52,18 +52,18 @@
 // "The value of num1 is <value here> and is greater than 10".
 
 function exercise1(num1) {
-    var answer1 = "";
-    // ------------------------------------------
-    // Write your code for exercise 1 below here:
-    // ------------------------------------------
-        if(num1 > 10){
-          answer1 += "The value of num1 is "+ num1 + " and is greater than 10."
-        }
-    // ------------------------------------------
-    // And above here
-    // ------------------------------------------
-    return answer1;
-  }
+  var answer1 = num1 + " is small";
+  // ------------------------------------------
+  // Write your code for exercise 1 below here:
+  // ------------------------------------------
+      if(num1>10){
+          answer1="The value of num1 is " + num1+ " and is greater than 10."
+      }
+  // ------------------------------------------
+  // And above here
+  // ------------------------------------------
+  return answer1;
+}
   console.log(exercise1(11));
   
   // EXERCISE 2.
@@ -261,18 +261,29 @@ function exercise1(num1) {
     // --------------------------------------------
     // Write your code for the exercise below here:
     // --------------------------------------------
-   
-      if (typeof item !== "number"){
-        answer9 ="Please send a number, that was a " + typeof item;
-      }else { 
-         switch(item){
-            
-            default:
-              answer9="Please send a number, that was a " + typeof item;
-         
-         }
-        }
-     
+    if(typeof item !== "number"){
+      answer9="please send a number, that was a " + typeof item;
+    }else{
+    switch (item){
+      case 1:
+        answer9="You won!";
+        break;
+      
+      case 7:
+        answer9="You are lucky!";
+         break;
+      case 101:
+        answer9="Welcome to coding 101!";
+        break;
+      case 1000000:
+        answer9="You are one in a million!";
+        break;
+        default:
+          answer9="Thanks for that!";
+       
+        
+      }
+    }
     
     // --------------------------------------------
     // And above here
