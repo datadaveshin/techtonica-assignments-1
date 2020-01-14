@@ -7,6 +7,24 @@ body{
      
 }
 
+nav {
+    margin-top:2%;
+    
+}
+nav li{
+    display:inline;
+    list-style-type: none;
+    padding-left:2%;
+    
+}
+nav li a {
+    
+    text-decoration: none;
+    font-size:20px;
+    color:#8C2D0E;
+
+}
+
 #contianer{
     display: flex;
         align-items: center;
