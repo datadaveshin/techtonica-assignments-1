@@ -49,7 +49,7 @@ nav li a {
 .left{
     float:left;
 }
-.instruction{
+#instruction{
     text-align:center;
      list-style-position:inside; 
      width:800px;
