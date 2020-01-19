@@ -88,3 +88,25 @@ function printCuteAnimals(array){
 let animals=["cat", "dog", "rabbit"];
 let newAnimal=["bird","squirl","kangroo"];
 console.log(printCuteAnimals(animals));
+
+
+//Wrinting Readable Code
+// Write a function to find largest number of 3 integers.
+
+function findMax(n1, n2, n3){
+   let maxResult=Math.max(n1,n2,n3);
+    return maxResult;
+}
+ console.log(`The max number is :  ${findMax(2,6,4)}`);
+
+// Write a function to find if a word has at least 10 letters or not
+function bigWord(string){
+    if (string.length>=10){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(`The string has at 10 letter is ${bigWord("Happy Holiday")}`);
+console.log('The string has less 10 letter is '+ bigWord("hello"));
