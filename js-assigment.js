@@ -1,3 +1,4 @@
+// JS Practice 
 function calculation(first, operator, second){
     let result;
     let sqrt=Math.sqrt();
@@ -128,3 +129,15 @@ console.log(modifyArray)
   
 //Practice on .reverse() method & using same variable array in .concat practice
 console.log(newAnimals.reverse());
+
+
+//1. Challenge for sloving Coding Challenge topic
+//create a function call squareMax and return the max of two parameters
+
+function squareMax(n,m){
+    let multiplicationOfM=m * m;
+    let multiplicationOfN=n*n;
+    console.log(Math.max(multiplicationOfM,multiplicationOfN));
+
+}
+squareMax(1,2)
