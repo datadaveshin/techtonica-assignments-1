@@ -90,7 +90,7 @@ let newAnimal=["bird","squirl","kangroo"];
 console.log(printCuteAnimals(animals));
 
 
-//Wrinting Readable Code
+//Writing Readable Code
 // Write a function to find largest number of 3 integers.
 
 function findMax(n1, n2, n3){
@@ -110,3 +110,21 @@ function bigWord(string){
 
 console.log(`The string has at 10 letter is ${bigWord("Happy Holiday")}`);
 console.log('The string has less 10 letter is '+ bigWord("hello"));
+
+//Practice for Reading & Writing Documentation
+//Practice using .concat(), .fill() method, and .reverse() method
+
+//Practice on .concat() method
+  const newAnimals=["cat","dog","rabbit","dragon"];
+  const numbers=[1,2,3,4,5];
+  const weekdays=["Monday", "Tuesday", "Wednesday","Thursday", "Friday"];
+   
+  let newArray=newAnimals.concat(numbers, weekdays);
+  console.log(newArray)
+  
+//Practice on .fill() method & using same variable array in .concat practice
+let modifyArray=newAnimals.fill("Snake", 1, 4);
+console.log(modifyArray)
+  
+//Practice on .reverse() method & using same variable array in .concat practice
+console.log(newAnimals.reverse());
