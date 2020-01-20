@@ -141,3 +141,50 @@ function squareMax(n,m){
 
 }
 squareMax(1,2)
+
+
+//Practice for Testing Mindset Topic
+//1.writing a function to testing two numbers if the first number larger than the second number.
+function testingTheLargestNum (num1, num2){
+    if(num1>num2){
+        return true;
+    }else {
+        return false;
+    }
+}
+ console.log(testingTheLargestNum(1,2));
+ console.log(testingTheLargestNum(3,2));
+//2.A function that takes in an array of numbers, and returns the third number in the array.
+let numsArray=[1,2,3,4,5];
+
+function returnTheThirdArray(array){
+    return array[2];
+}
+
+console.log(returnTheThirdArray(numsArray));
+
+//3.A function that takes 3 numbers as parameters. The 3 parameters are called min, max, and target. Return whether target number is between the min and the max (inclusive).
+
+function testingTheTargetNum(min,max,target){
+    if((min<target)&&(target<max)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+console.log(testingTheTargetNum(1,5,4));
+console.log(testingTheTargetNum(4,5,2));
+
+//4.A function that takes in a number, and prints the word "Hello" that many times.
+
+function printHello(num){
+    let result=" ";
+    for(let i=0; i<3; i++){
+       
+        result+="hello";
+    }
+    return result;
+}
+
+console.log(printHello(3))
