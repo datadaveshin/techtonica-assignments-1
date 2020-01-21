@@ -187,4 +187,87 @@ function printHello(num){
     return result;
 }
 
-console.log(printHello(3))
+console.log(printHello(3));
+
+//JS 3 Challenge
+    //Challenge 1
+
+        function getGrade(score) {
+            let grade;
+            if(25<score&& score<=30){
+                grade ="A";
+            }else if(20<score&& score<=25){
+                grade ="B";
+            }else if(15<score&& score<=20){
+                grade ="C";
+            }else if(10<score&& score<=15){
+                grade ="D";
+            }else if(5<score&& score<=10){
+                grade ="E"
+            }else{
+                grade ="F"
+            }
+            
+            return grade;
+        }
+        console.log(getGrade(14));
+
+    //challenge 2 Part 1
+            2 == "2";  //true;
+            2 === 2;   //true;
+            10 % 3;    //1
+            10 % 3 === 1;
+            true && false;  //false
+            false || true;  //true
+            true || false;  //true
+    //Challenge 2 Part 2
+            
+            var isLearning = true;
+            if(isLearning){
+                console.log("Keep it up!");
+            } else {
+                console.log("Pretty sure you are learning....");
+            }
+
+            // 1.What should the above code console.log?
+                //  The console.log will print out "Keep it up!".
+            // 2.Why do we not need to specify if(isLearning === true)? Why does if(isLearning) work on its own?
+                //We don't need to specify the islearning ===true and it does know how to work, because at the ine 225, isLearning is define.
+                var firstVariable;
+                var secondVariable = "";
+                var thirdVariable = 1;
+                var secretMessage = "Shh!";
+            //Part 2 second question   
+                if(firstVariable){
+                    console.log("first");
+                } else if(firstVariable || secondVariable){
+                    console.log("second");
+                } else if(firstVariable || thirdVariable){
+                    console.log("third");
+                } else {
+                    console.log("fourth");
+                }
+            //1. What should the above code console.log? Why?
+                // It will print out the word "third" because either firstVariable or thirdVariable is true;
+            //2. What is the value of firstVariable when it is initialized?
+                // The firstVariable doesn't have a value yet;
+                // Is the value of firstVariable a "truthy" value? Why?
+                // No, the system just initialize the variable, but it didn't assign a value to it;
+                // Is the value of secondVariable a "truthy" value? Why?
+                // Yes because it is a empty string;
+                // // Is the value of thirdVariable a "truthy" value? Why?
+                // Yes it assigns the number 1 to the thirdVariable;
+            //part 3 
+               //Research Math.random here and write an if statement that console.log's "Over 0.5" if Math.random returns a number greater than 0.5. Otherwise console.log "Under 0.5".
+                
+                num=Math.random();
+                if(num>0.5){
+                    console.log(num +"is greater than 0.5");
+                }else{
+                    console.log(num +" is under 0.5")
+                }
+
+               //What is a falsey value? List all the falsey values in JavaScript.
+                //  False value happes when JavaScipt is expecting a Boolean but it is given to value below: zeor, "", '', ``, undfine, null, false, and null. 
+
+//Practices for JS4
