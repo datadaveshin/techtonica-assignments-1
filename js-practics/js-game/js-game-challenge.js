@@ -4,7 +4,9 @@ const userPrevGuess=document.querySelector(".prevGuess");
 const returnResult=document.querySelector(".result");
 const hint=document.querySelector(".moreHint");
 const userTries=document.querySelector(".tries");
+const  img=document.querySelector(".congrat");
 let userMax=document.querySelector(".max");
+
 
 const userSubmit1=document.querySelector(".submit1");
 // let answer=Math.floor(Math.random()*100)+1;
@@ -31,7 +33,7 @@ function checkMyGuess(){
     if(userGuess===answer){
         returnResult.textContent="Bingle! You guess right";
         hint.textContent=" ";
-       
+        
         
     }else if(userGuess<answer){
         returnResult.textContent="Sorry! You are wrong";
