@@ -31,13 +31,14 @@ function checkMyGuess(){
     if(userGuess===answer){
         returnResult.textContent="Bingle! You guess right";
         hint.textContent=" ";
-        imgPopUp();
+       
         
     }else if(userGuess<answer){
         returnResult.textContent="Sorry! You are wrong";
                 hint.textContent="Your guess is less than the actual number!";
                 
                 userTries.textContent="Your have tried " +num + " wrong";
+
     } else if(userGuess>answer){
         returnResult.textContent="Sorry! You are wrong";
         hint.textContent="Your guess is higher than the actual number" ;
@@ -50,4 +51,6 @@ function checkMyGuess(){
 }
  hint.style.fontWeight="bold";
 userSubmit.addEventListener("click", checkMyGuess);
+
+
 
