@@ -8,7 +8,7 @@ $(document).ready( () => {
     $("#all-users").html(html);
     $("#button").click(function(e){
         e.preventDefault();
-        let li=""
+        
         let addUser=$("#add-user-name").val();
         
         $("#all-users").append(addUser)

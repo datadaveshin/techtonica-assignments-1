@@ -110,5 +110,4 @@ class classRoom {
     }
 }
 
-let bigClass=new classRoom("happy")
-console.log(bigClass)
+
