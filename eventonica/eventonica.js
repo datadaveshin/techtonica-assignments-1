@@ -91,10 +91,24 @@ recommandation.addUser(user2);
 recommandation.addEvent(event1);
 recommandation.addEvent(event2);
 user1.addPersonEvent("Studying");
+// console.log(recommandation.events)
+console.log(recommandation.users[0])
 // testing to see if search by date and category works
-console.log(recommandation.events);
-console.log(recommandation.users);
-console.log(recommandation.findEventsByDate("Tuesday"));
-console.log(recommandation.findEventsbyCategory("happy weekend"));
+// console.log(recommandation.events);
+// console.log(recommandation.users);
+// console.log(recommandation.findEventsByDate("Tuesday"));
+// console.log(recommandation.findEventsbyCategory("happy weekend"));
 
-module.exports = { EventRecommender, User, Event}
+if (typeof module != 'undefined'){
+    module.exports = { EventRecommender, User,  Event} 
+}
+
+class classRoom {
+    constructor(){
+    this.name=name;
+    this.name1={};
+    }
+}
+
+let bigClass=new classRoom("happy")
+console.log(bigClass)
