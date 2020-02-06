@@ -18,14 +18,20 @@ class Event {
         return this.availableTickets;  
     }
     searchTicket(min,max){
-       for(let i=0; i<this.availableTickets.length; i++){
-        if(this.availableTickets[i]>=min && this.availableTickets[i]<=max){
-            return this.availableTickets[i];
-        }else {
-            return `No tickets available.`
+        let result=" ";
+       for (let i=0; i<this.availableTickets.length; i++){
+        if(i%2 ==0){
+            result+=" ";
         }
+        if(i%2 !==0 && this.availableTickets[i]>min && this.availableTickets[i]<max){
+            result+=this.availableTickets[i-1] + this.availableTickets[i];
+        } 
+       
+    
     }
-    }
+    return result;
+}
+ 
 }
 
 class TicketType {
@@ -44,11 +50,17 @@ console.log(eventArray);
 
 
 $(document).ready(function () {
+  
     let html = " ";
     $.each(eventArray, function (index, item) {
         html += `<li>${item.name}-${item.description}</li>-all ticket:${item.searchTicket()}`;
     });
     $("#event").html(html);
+
+    // $('#name').keyup(function () {
+    //     $('#display').text($(this).val());
+    //   });
+  
 })
 
 
@@ -60,6 +72,10 @@ eventObj3.addAvailableTickets("Mezzanine", 200);
 eventObj3.addAvailableTickets("Orchestra", 300);
 eventObj3.addAvailableTickets("Mezzanine", 200);
 eventObj3.addAvailableTickets("Balcony", 100);
-// console.log(eventObj3.searchTickets(0, 250));
+eventObj1.searchTicket(0, 250);
+eventObj2.searchTicket(0, 100);
+eventObj3.searchTicket(0, 250);
+
+console.log(eventObj1.name)
 
 
